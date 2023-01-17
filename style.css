@@ -1,0 +1,316 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.background {
+    background-color: rgb(145, 139, 118);
+ }
+
+/* black coupon header starts here  */
+.header {
+    text-align: center;
+    background-color: black;
+}
+
+.header h3 {
+    color: white;
+    padding: .3cm;
+}
+
+/* black coupon header ends here  */
+
+/* nav bar starts here  */
+.navbar {
+    background-color: rgb(172, 168, 110);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar img {
+    height: 150px;
+    width: 300px;
+    /* maybe figure out how to get logo more to the left  */
+}
+
+.listitem {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding-left: 20px;
+}
+/* .burger {
+    display: none;
+    font-size: 1.5rem;
+    padding-left: 20px;
+} */
+/* figure out how to expand nav items when clicked on  */
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: black;
+}
+
+
+
+/* nav bar ends here  */
+.homebutton {
+    background-color: rgb(145, 139, 118);
+}
+.homebutton h1 {
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    top: -200px;
+    font-size: 5rem;
+    color: white;
+}
+.homebutton a {
+    text-decoration: none;
+    background-color: rgb(67, 74, 66);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    border-radius: 40px;
+    padding: 10px;
+    position: relative;
+    top: -200px;
+}
+/* figure out how to center button  */
+/* Values start here  */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.flex-item {
+    /* border: 1px solid black; */
+    width: 300px;
+    height: 250px;
+    /* background: rgb(224, 224, 224);  */
+    margin: 10px;
+    color: black;
+    background-color: beige;
+}
+
+.flex-item img {
+    height: 50%;
+    width: 70%;
+    padding-bottom: 20px;
+}
+
+/* figure out how to center items */
+/* Values end here  */
+
+/* shopping page starts here  */
+/* add hero image if i have time  */
+.shoppingcontainer {
+max-width: 960px;
+margin: auto;
+padding: 10px;
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+gap: 20px;
+}
+
+.item {
+    background-color: rgb(225, 202, 150);
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.item:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.513);
+}
+.item h3 {
+    padding: 20px;
+}
+
+.item img {
+    width: 200px;
+    height: 200px;
+}
+.label {
+    padding-top: 10px;
+}
+/* figure out how to get the things within the grid inline */
+/* container ends here  */
+
+/* contact hero starts here  */
+
+#hero {
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.624), rgba(0, 0, 0, 0.685)), url('image/contact.jpg') no-repeat center / cover;
+    color: white;
+}
+
+.herocontact {
+    width: 90%;
+    height: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.herocontact .info h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    /* text-shadow: 1px 1px 2px black; */
+    /* why does this not work? */
+}
+
+
+a:hover {
+    opacity: 0.7
+}
+
+
+
+/* contact hero ends here  */
+
+/* contact form starts here  */
+.formcontainer {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+padding: 30px;
+}
+
+.formitem {
+    /* width: 400px; */
+    height: 400px;
+}
+
+.formform {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    padding-top: 10px;
+}
+
+.formitem h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+}
+
+.formitem h5 {
+    color: #ccc;
+}
+
+.formitem p {
+    color: rgba(98, 108, 102, 0.89);
+    padding-right: 50px;
+}
+.textform {
+    border:  rgba(98, 108, 102, 0.509) 3px solid;
+}
+/* how to make text in form go behind nav  */
+::placeholder {
+    opacity: 0.25;
+}
+/* figure out responsiveness  */
+/* contact form ends here  */
+
+/* media query starts here  */
+@media (max-width: 500px) {
+    /* html {
+    } */
+    .formcontainer {
+        grid-template-columns: 1fr;
+        }
+        /* .navbar .listitem {
+            display: none;
+        }
+        .burger {
+            display: inline-block;
+        } */
+        .container {
+            flex-direction: column;
+        }
+        .homebutton a h1 {
+            font-size: 20px;
+        }
+
+
+ /* figure out why its overflowing  */
+  }
+/* media query ends here  */
+/* footer starts here  */
+
+.footer {
+    background-color: rgb(67, 74, 66);
+    padding: 50px 0;
+}
+
+.footer .item-social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    margin-top: 22px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer .copyright {
+    margin-top: 14px;
+    margin-bottom: 0;
+    font-size: 13px;
+    opacity: 0.6;
+    color: white;
+}
+
+.footer .item-social {
+    text-align: center;
+}
+
+.footer .item-social>a:hover {
+    opacity: 0.25;
+}
+
+.footer .item-social a {
+    color: white;
+}
+
+.footer .mailinglist {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+#Email {
+    padding-right: 20px;
+}
+.submit {
+    margin-top: 10px;
+    background-color:rgb(225, 202, 150);
+}
+/* .fa-envalope {
+    padding: 10px 24px;
+    color:rgb(225, 202, 150);
+} */
+/* figure out how to make envalope icon bigger and change color?  */
+
+/* footer ends here  */
