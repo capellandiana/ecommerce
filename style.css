@@ -57,6 +57,7 @@ nav a {
 
 nav a:hover {
     color: black;
+    text-decoration: none;
 }
 
 
@@ -71,6 +72,7 @@ nav a:hover {
     top: -200px;
     font-size: 5rem;
     color: white;
+    text-shadow: 1px 1px 2px black;
 }
 .homebutton a {
     text-decoration: none;
@@ -85,8 +87,14 @@ nav a:hover {
     padding: 10px;
     position: relative;
     top: -200px;
+
+    
 }
-/* figure out how to center button  */
+.homebutton a:hover {
+    text-decoration: none;
+    color: white;
+}
+
 /* Values start here  */
 .container {
     display: flex;
@@ -96,22 +104,26 @@ nav a:hover {
 }
 
 .flex-item {
-    /* border: 1px solid black; */
     width: 300px;
     height: 250px;
-    /* background: rgb(224, 224, 224);  */
     margin: 10px;
     color: black;
     background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .flex-item img {
     height: 50%;
     width: 70%;
-    padding-bottom: 20px;
+    padding: 20px 0;
+}
+.flex-item p {
+    text-align: center;
+    padding: 0 5px;
 }
 
-/* figure out how to center items */
 /* Values end here  */
 
 /* shopping page starts here  */
@@ -136,6 +148,7 @@ gap: 20px;
 .item:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.513);
 }
+
 .item h3 {
     padding: 20px;
 }
@@ -144,6 +157,7 @@ gap: 20px;
     width: 200px;
     height: 200px;
 }
+
 .label {
     padding-top: 10px;
 }
@@ -173,8 +187,7 @@ gap: 20px;
 .herocontact .info h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    /* text-shadow: 1px 1px 2px black; */
-    /* why does this not work? */
+    text-shadow: 1px 1px 2px black;
 }
 
 
@@ -220,11 +233,11 @@ padding: 30px;
 .textform {
     border:  rgba(98, 108, 102, 0.509) 3px solid;
 }
-/* how to make text in form go behind nav  */
+
 ::placeholder {
     opacity: 0.25;
 }
-/* figure out responsiveness  */
+
 /* contact form ends here  */
 
 /* media query starts here  */
@@ -243,13 +256,21 @@ padding: 30px;
         .container {
             flex-direction: column;
         }
-        .homebutton a h1 {
-            font-size: 20px;
+        .homebutton h1 {
+            font-size: 2rem;
+        }
+        .homebutton a {
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+        }
+        .homebutton a h2 {
+            font-size: 1rem;
+            margin-bottom: unset;
         }
 
-
- /* figure out why its overflowing  */
   }
+
 /* media query ends here  */
 /* footer starts here  */
 
@@ -307,10 +328,5 @@ padding: 30px;
     margin-top: 10px;
     background-color:rgb(225, 202, 150);
 }
-/* .fa-envalope {
-    padding: 10px 24px;
-    color:rgb(225, 202, 150);
-} */
-/* figure out how to make envalope icon bigger and change color?  */
 
 /* footer ends here  */
