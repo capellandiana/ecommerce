@@ -15,7 +15,7 @@ function Footer () {
               <a href="https://www.twitter.com"><i className="icon ion-social-twitter" aria-label="twitter link"></i></a>
               <a href="https://www.snapchat.com"><i className="icon ion-social-snapchat" aria-label="snapchat link"></i></a>
               <a href="https://www.instagram.com"><i className="icon ion-social-instagram" aria-label="instagram link"></i></a>
-            <p class="copyright">Company Name © 2023</p>
+            <p class="copyright">Meowmazon © 2023</p>
         </div>
           </footer>
     </div>

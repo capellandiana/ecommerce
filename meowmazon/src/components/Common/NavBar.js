@@ -1,5 +1,6 @@
 import './NavBar.css';
-import GrayLogo from './Img/mm3.png'
+import GrayLogo from './Img/mm3.png';
+import { BrowserRouter, Route, Link } from "react-router-dom";
 
 
 function NavBar() {
@@ -7,13 +8,13 @@ function NavBar() {
         <img src={GrayLogo} alt='meowmazon logo'></img>
         <ul className="navlist">
             <li className="listitem">
-                <a href="App.js">Home</a>
+            <Link to="/">Home</Link>
                 </li>
             <li className="listitem">
-                <a href="shop.html">Shopping</a>
+            <Link to="/shop">Shop</Link>
                 </li>
             <li className="listitem">
-                <a href="Contact.js">Contact Us</a>
+            <Link to="/contact">Contact</Link>
                 </li>
         </ul>
     </div>

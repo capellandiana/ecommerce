@@ -30,7 +30,7 @@ const goToNext = () => {
 useEffect(() => {
     timerRef.current = setTimeout(() => {
         goToNext();
-    }, 3000);
+    }, 5000);
 })
 
     return (
@@ -48,4 +48,3 @@ useEffect(() => {
 }
 
 export default ImageSlider;
-// style={sliderStyles}

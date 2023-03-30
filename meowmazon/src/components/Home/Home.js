@@ -1,4 +1,3 @@
-
 import Coupon from '../Common/Coupon'
 import NavBar from '../Common/NavBar';
 import ImageSlider from './ImageSlider';
